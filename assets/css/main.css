@@ -1184,8 +1184,8 @@ section,
 }
 
 .menu .dish-row .dish-info .dish-header .dish-price {
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--accent-color);
   white-space: nowrap;
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
