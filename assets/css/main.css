@@ -1024,6 +1024,7 @@ section,
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
+
 .menu .filter-tabs {
   margin-bottom: 48px;
 }
@@ -1057,16 +1058,17 @@ section,
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6366f1 20%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #6366f1 20%)
+  );
   border-radius: 3px 3px 0 0;
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu .filter-tabs ul li:hover {
-  color: var(--accent-color);
-}
-
+.menu .filter-tabs ul li:hover,
 .menu .filter-tabs ul li.filter-active {
   color: var(--accent-color);
 }
@@ -1075,29 +1077,18 @@ section,
   transform: scaleX(1);
 }
 
-@media (max-width: 768px) {
-  .menu .filter-tabs ul {
-    gap: 0;
-    border-bottom: none;
-  }
-
-  .menu .filter-tabs ul li {
-    padding: 10px 16px;
-    font-size: 0.85rem;
-    border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 88%);
-  }
-}
+/* Dish Cards */
 
 .menu .dish-row {
   display: flex;
   align-items: stretch;
+  height: 100%;
   background: var(--surface-color);
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   box-shadow: 0 4px 12px color-mix(in srgb, var(--default-color), transparent 94%);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  height: 100%;
 }
 
 .menu .dish-row:hover {
@@ -1108,7 +1099,11 @@ section,
 
 .menu .dish-row.highlighted {
   border-color: var(--accent-color);
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 96%), var(--surface-color));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-color), transparent 96%),
+    var(--surface-color)
+  );
 }
 
 .menu .dish-row.highlighted .dish-header h4::after {
@@ -1117,6 +1112,8 @@ section,
   color: var(--accent-color);
   font-size: 0.85rem;
 }
+
+/* Left Image */
 
 .menu .dish-row .dish-thumb {
   position: relative;
@@ -1139,6 +1136,8 @@ section,
   transform: scale(1.1);
 }
 
+/* Tags on Image */
+
 .menu .dish-row .dish-thumb .tag-stack {
   position: absolute;
   top: 10px;
@@ -1156,101 +1155,112 @@ section,
   text-transform: uppercase;
   letter-spacing: 0.5px;
   backdrop-filter: blur(8px);
+  color: var(--contrast-color);
 }
 
 .menu .dish-row .dish-thumb .tag-stack .tag.tag-veggie {
   background: color-mix(in srgb, #22c55e, transparent 20%);
-  color: var(--contrast-color);
 }
 
 .menu .dish-row .dish-thumb .tag-stack .tag.tag-ocean {
   background: color-mix(in srgb, #3b82f6, transparent 20%);
-  color: var(--contrast-color);
 }
 
 .menu .dish-row .dish-thumb .tag-stack .tag.tag-star {
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6366f1 30%));
-  color: var(--contrast-color);
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #6366f1 30%)
+  );
 }
 
 .menu .dish-row .dish-thumb .tag-stack .tag.tag-amber {
   background: color-mix(in srgb, #f59e0b, transparent 20%);
-  color: var(--contrast-color);
 }
 
 .menu .dish-row .dish-thumb .tag-stack .tag.tag-exclusive {
   background: color-mix(in srgb, #8b5cf6, transparent 20%);
-  color: var(--contrast-color);
 }
 
 .menu .dish-row .dish-thumb .tag-stack .tag.tag-leaf {
   background: color-mix(in srgb, #10b981, transparent 20%);
-  color: var(--contrast-color);
 }
 
 .menu .dish-row .dish-thumb .tag-stack .tag.tag-crimson {
   background: color-mix(in srgb, #ef4444, transparent 20%);
-  color: var(--contrast-color);
 }
 
 .menu .dish-row .dish-thumb .tag-stack .tag.tag-mint {
   background: color-mix(in srgb, #34d399, transparent 20%);
-  color: var(--contrast-color);
+}
+
+/* Right Content */
+
+.menu .dish-row .dish-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-width: 0;
 }
 
 .menu .dish-row .dish-info {
-  flex: 1;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  padding: 24px 28px;
 }
 
-.menu .dish-row .dish-info .dish-header {
+.menu .dish-row .dish-header {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 10px;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
 }
 
-.menu .dish-row .dish-info .dish-header h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
+.menu .dish-row .dish-header h4 {
   margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 700;
   letter-spacing: -0.01em;
-  line-height: 1.3;
 }
 
-.menu .dish-row .dish-info .dish-header .dish-price {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--accent-color);
+.menu .dish-row .dish-price {
+  flex-shrink: 0;
   white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-color);
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  padding: 4px 14px;
+  padding: 5px 14px;
   border-radius: 20px;
 }
 
 .menu .dish-row .dish-info p {
+  margin: 0;
+  max-width: 440px;
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 0.88rem;
-  line-height: 1.6;
-  margin-bottom: 12px;
 }
 
-.menu .dish-row .dish-info .dish-meta .heat-indicator {
+/* Optional Meta */
+
+.menu .dish-row .dish-meta {
+  margin-top: 14px;
+}
+
+.menu .dish-row .dish-meta .heat-indicator {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.menu .dish-row .dish-info .dish-meta .heat-indicator i {
+.menu .dish-row .dish-meta .heat-indicator i {
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 0.85rem;
 }
 
-.menu .dish-row .dish-info .dish-meta .heat-indicator .heat-bar {
+.menu .dish-row .dish-meta .heat-indicator .heat-bar {
   display: block;
   width: 60px;
   height: 4px;
@@ -1259,7 +1269,7 @@ section,
   overflow: hidden;
 }
 
-.menu .dish-row .dish-info .dish-meta .heat-indicator .heat-bar .heat-fill {
+.menu .dish-row .dish-meta .heat-indicator .heat-bar .heat-fill {
   display: block;
   height: 100%;
   background: linear-gradient(90deg, #f59e0b, #ef4444);
@@ -1267,21 +1277,7 @@ section,
   transition: width 0.5s ease;
 }
 
-@media (max-width: 576px) {
-  .menu .dish-row {
-    flex-direction: column;
-  }
-
-  .menu .dish-row .dish-thumb {
-    flex: 0 0 auto;
-    min-height: 180px;
-    height: 180px;
-  }
-
-  .menu .dish-row .dish-info {
-    padding: 20px;
-  }
-}
+/* Info Strip */
 
 .menu .info-strip {
   margin-top: 48px;
@@ -1309,7 +1305,11 @@ section,
   align-items: center;
   gap: 8px;
   padding: 12px 28px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6366f1 20%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #6366f1 20%)
+  );
   color: var(--contrast-color);
   text-decoration: none;
   border-radius: 24px;
@@ -1329,26 +1329,17 @@ section,
   font-size: 1.1rem;
 }
 
-@media (max-width: 992px) {
-  .menu .info-strip {
-    text-align: center;
-  }
-
-  .menu .info-strip .notice-inline {
-    justify-content: center;
-    margin-bottom: 16px;
-  }
-
-  .menu .info-strip .col-lg-4 {
-    text-align: center !important;
-  }
-}
+/* Spotlight Section */
 
 .menu .spotlight-section {
   margin-top: 64px;
   padding: 48px;
   border-radius: 20px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 94%), color-mix(in srgb, #6366f1, transparent 96%));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-color), transparent 94%),
+    color-mix(in srgb, #6366f1, transparent 96%)
+  );
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
@@ -1388,13 +1379,13 @@ section,
 }
 
 .menu .spotlight-section .spotlight-card {
+  height: 100%;
   background: var(--surface-color);
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   box-shadow: 0 4px 12px color-mix(in srgb, var(--default-color), transparent 94%);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  height: 100%;
 }
 
 .menu .spotlight-section .spotlight-card:hover {
@@ -1427,7 +1418,11 @@ section,
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6366f1 30%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), #6366f1 30%)
+  );
   color: var(--contrast-color);
   display: flex;
   align-items: center;
@@ -1437,11 +1432,11 @@ section,
 }
 
 .menu .spotlight-section .spotlight-card .spotlight-body {
+  height: 100%;
   padding: 28px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
 }
 
 .menu .spotlight-section .spotlight-card .spotlight-body h4 {
@@ -1515,7 +1510,35 @@ section,
   margin-right: 4px;
 }
 
+/* Responsive */
+
+@media (max-width: 992px) {
+  .menu .info-strip {
+    text-align: center;
+  }
+
+  .menu .info-strip .notice-inline {
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .menu .info-strip .col-lg-4 {
+    text-align: center !important;
+  }
+}
+
 @media (max-width: 768px) {
+  .menu .filter-tabs ul {
+    gap: 0;
+    border-bottom: none;
+  }
+
+  .menu .filter-tabs ul li {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  }
+
   .menu .spotlight-section {
     padding: 32px 20px;
   }
@@ -1543,40 +1566,396 @@ section,
   }
 }
 
-.menu .dish-row .dish-content {
-  flex: 1;
-  padding: 26px 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 0;
+@media (max-width: 576px) {
+  .menu .dish-row {
+    flex-direction: column;
+  }
+
+  .menu .dish-row .dish-thumb {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 180px;
+    height: 180px;
+  }
+
+  .menu .dish-row .dish-content {
+    display: block;
+  }
+
+  .menu .dish-row .dish-info {
+    padding: 20px;
+  }
+
+  .menu .dish-row .dish-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu .dish-row .dish-price {
+    align-self: flex-start;
+  }
 }
 
-.menu .dish-row .dish-header {
+/* FINAL PIZZA CARD FIX — keep col-lg-6 */
+
+.menu .dish-row {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 18px;
+  align-items: stretch;
+  height: auto;
+  min-height: 150px;
+  overflow: hidden;
+}
+
+/* smaller image so text has room */
+.menu .dish-row .dish-thumb {
+  flex: 0 0 135px;
+  width: 135px;
+  min-width: 135px;
+  min-height: 150px;
+  height: auto;
+}
+
+.menu .dish-row .dish-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* right side */
+.menu .dish-row .dish-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu .dish-row .dish-info {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 16px;
+}
+
+/* title and price must NOT be side-by-side in col-lg-6 */
+.menu .dish-row .dish-info .dish-header {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.menu .dish-row .dish-info .dish-header h4 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* make price wrap instead of getting cut off */
+.menu .dish-row .dish-info .dish-header .dish-price {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  line-height: 1.3;
+  padding: 4px 9px;
+  border-radius: 16px;
+}
+
+.menu .dish-row .dish-info p {
+  margin: 0;
+  max-width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+/* medium screens: still side by side, just tighter */
+@media (max-width: 991px) {
+  .menu .dish-row .dish-thumb {
+    flex: 0 0 150px;
+    width: 150px;
+    min-width: 150px;
+  }
+}
+
+/* phones: stack */
+@media (max-width: 576px) {
+  .menu .dish-row {
+    flex-direction: column;
+  }
+
+  .menu .dish-row .dish-thumb {
+    width: 100%;
+    min-width: 100%;
+    height: 180px;
+    min-height: 180px;
+    flex: none;
+  }
+
+  .menu .dish-row .dish-info {
+    padding: 18px;
+  }
+
+  .menu .dish-row .dish-info .dish-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .menu .dish-row .dish-info p {
+    font-size: 0.9rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Build Your Own Pizza Section
+--------------------------------------------------------------*/
+
+.build-section {
+  padding: 80px 0;
+}
+
+.build-section .spotlight-section {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 56px 48px;
+  border-radius: 28px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--surface-color), transparent 5%),
+    color-mix(in srgb, var(--surface-color), transparent 16%)
+  );
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 75%);
+  box-shadow: 0 24px 70px color-mix(in srgb, #000, transparent 78%);
+}
+
+.build-section .spotlight-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px auto;
+}
+
+.build-section .spotlight-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 0.85rem;
   margin-bottom: 14px;
 }
 
-.menu .dish-row .dish-header h4 {
-  margin: 0;
-  font-size: 1.35rem;
+.build-section .spotlight-header h3 {
+  text-align: center;
+  margin: 0 0 16px 0;
+  font-size: 2rem;
+  font-weight: 700;
   line-height: 1.2;
+  color: var(--heading-color);
 }
 
-.menu .dish-row .dish-header .dish-price,
-.menu .dish-row .dish-header .price {
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-
-.menu .dish-row .dish-description,
-.menu .dish-row p {
-  margin: 0;
+.build-section .spotlight-header p {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.05rem;
   line-height: 1.7;
-  max-width: 440px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+
+/*--------------------------------------------------------------
+# Pizza Pricing Card
+--------------------------------------------------------------*/
+
+.build-pizza-card {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+
+/*--------------------------------------------------------------
+# Pizza Pricing Table
+--------------------------------------------------------------*/
+
+.pizza-table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pizza-row {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 18px;
+  align-items: center;
+  padding: 18px 22px;
+  background: color-mix(in srgb, var(--default-color), transparent 94%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.pizza-row span {
+  color: var(--default-color);
+  font-size: 1rem;
+}
+
+.pizza-row span:first-child {
+  font-weight: 700;
+}
+
+.pizza-row span:not(:first-child) {
+  text-align: center;
+  font-weight: 700;
+}
+
+.pizza-head {
+  background: transparent;
+  border: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.pizza-head span {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+
+/*--------------------------------------------------------------
+# Pizza Row Hover Effect
+--------------------------------------------------------------*/
+
+.pizza-row:not(.pizza-head) {
+  cursor: pointer;
+}
+
+.pizza-row:not(.pizza-head):hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px color-mix(in srgb, #000, transparent 78%);
+}
+
+.pizza-row:not(.pizza-head):hover span:first-child {
+  color: var(--accent-color);
+}
+
+.pizza-row:not(.pizza-head):hover span:not(:first-child) {
+  color: var(--contrast-color);
+}
+
+
+/*--------------------------------------------------------------
+# Pizza Note
+--------------------------------------------------------------*/
+
+.pizza-note {
+  margin-top: 24px;
+  text-align: center;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+  font-size: 0.95rem;
+}
+
+.pizza-note i {
+  color: var(--accent-color);
+  margin-right: 8px;
+}
+
+
+/*--------------------------------------------------------------
+# Build Your Own Pizza Mobile
+--------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .build-section {
+    padding: 60px 0;
+  }
+
+  .build-section .spotlight-section {
+    padding: 42px 16px;
+    border-radius: 24px;
+  }
+
+  .build-section .spotlight-header {
+    max-width: 100%;
+    margin-bottom: 34px;
+  }
+
+  .build-section .spotlight-header h3 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+
+  .build-section .spotlight-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .pizza-head {
+    display: none;
+  }
+
+  .pizza-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px 28px;
+  }
+
+  .pizza-row span:first-child {
+    grid-column: auto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--heading-color);
+  }
+
+  .pizza-row span:not(:first-child) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: normal;
+  }
+
+  .pizza-row span:nth-child(2)::before {
+    content: "Plain Cheese:";
+  }
+
+  .pizza-row span:nth-child(3)::before {
+    content: "Additional Items:";
+  }
+
+  .pizza-row span:nth-child(4)::before {
+    content: "Stuffed Crust:";
+  }
+
+  .pizza-row span:nth-child(5)::before {
+    content: "Thin Crust:";
+  }
+
+  .pizza-row span:not(:first-child)::before {
+    color: var(--accent-color);
+    font-weight: 700;
+  }
+
+  .pizza-note {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
 }
 
 /*--------------------------------------------------------------
