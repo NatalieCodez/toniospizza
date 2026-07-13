@@ -213,3 +213,16 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+ /**
+   * Open Today Features
+   */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const today = new Date().getDay(); // 0 (Sun) - 6 (Sat)
+
+  document.querySelectorAll('.hero-features .value[data-day]').forEach(function (el) {
+    const days = el.getAttribute('data-day').split(',').map(Number);
+    el.style.display = days.includes(today) ? '' : 'none';
+  });
+});
