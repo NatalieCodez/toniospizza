@@ -92,11 +92,13 @@
             <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
               <span class="tagline">Real Pizza, Real Taste</span>
               <h1 class="hero-title">Welcome to Tonio's Pizza</h1>
-              <p class="hero-description">Hand-tossed dough, slow-simmered sauce, and toppings piled on with a generous hand. Tonio's has been serving up honest, no-nonsense pizza made the way it should be — fresh, hot, and full of flavor.</p>
+              <p class="hero-description">Hand-tossed dough, slow-simmered sauce, and toppings piled on with a generous hand. Tonio's has been serving up honest, no-nonsense pizza made the way it should be — fresh, hot, and full of flavor.
+                <br><br>
+                <b> Pickup Only - Not Available for Delivery</b>
+              </p>
 
               <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
                 <a href="tel:+13307257666" class="btn btn-primary">Call Us</a>
-                <a href="#menu" class="btn btn-outline">View Menu</a>
               </div>
 
               <div class="hero-features" data-aos="fade-up" data-aos-delay="300">
@@ -144,19 +146,22 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout" data-default-filter=".filter-pizzas" data-layout="masonry" data-sort="original-order">
 
           <div class="filter-tabs isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <ul>
-              <li data-filter=".filter-starters" class="filter-active">Starters</li>
-              <li data-filter=".filter-pizzas">Pizzas</li>
-              <li data-filter=".filter-dessert">Subs</li>
-              <li data-filter=".filter-drinks">Salads</li>
+              <li data-filter=".filter-starters">Starters</li>
+              <li data-filter=".filter-pizzas" class="filter-active">Pizzas</li>
+              <li data-filter=".filter-wings">Wings</li>
+              <li data-filter=".filter-subs">Subs</li>
+              <li data-filter=".filter-salads">Salads</li>
+              <li data-filter=".filter-desserts">Desserts</li>
             </ul>
           </div>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
+            <!-- Pizza Section -->
             <div class="col-lg-6 isotope-item filter-pizzas">
               <div class="dish-row">
                 <div class="dish-thumb">
@@ -182,9 +187,9 @@
               <div class="dish-row">
                 <div class="dish-thumb">
                   <img src="assets/img/restaurant/Deluxe-pissza.jpg" alt="Pizzas" class="img-fluid">
-                  <div class="tag-stack">
+                <!--- <div class="tag-stack">
                     <span class="tag tag-veggie">V</span>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="dish-info">
                   <div class="dish-header">
@@ -393,12 +398,518 @@
               </div>
             </div><!-- End Dish Item -->
 
+            <!-- Starters Section-->
+
+            <!-- Fish and Chips -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/fishandchips.webp" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Fish and Chips</h4>
+                    <span class="dish-price">$11</span>
+                  </div>
+                  <p>2 Piece Fish with French Fries and Tartar Sauce</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Chicken Finger and French Fries-->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/chickentendersandfries.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Chicken Finger and French Fries</h4>
+                    <span class="dish-price">$7.25</span>
+                  </div>
+                  <p>2 Piece Chicken Fingers with French Fries</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Mozzarella Sticks -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/mozzsticks.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Mozzarella Sticks</h4>
+                    <span class="dish-price">$7</span>
+                  </div>
+                  <p>6 Piece Mozzarella Sticks with Marinara Sauce</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Bread Sticks with Marinara Sauce -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/breadsticks1.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Bread Sticks with Marinara Sauce</h4>
+                    <span class="dish-price">$8</span>
+                  </div>
+                  <p>Perfect for sharing! Bread Sticks with Marinara Sauce</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Bread Sticks with Cheese -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/cheesebread.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Bread Sticks with Cheese</h4>
+                    <span class="dish-price">$9.50</span>
+                  </div>
+                  <p>Bread Sticks with melted cheese</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Jalapeno Poppers -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/jalapenopoppers.webp" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Jalapeno Poppers</h4>
+                    <span class="dish-price">$7.25</span>
+                  </div>
+                  <p>Cheddar or Cream Cheese stuffed jalapenos</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Breaded Mushrooms -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/breadedmushrooms.jpeg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Breaded Mushrooms</h4>
+                    <span class="dish-price">$6.50</span>
+                  </div>
+                  <p>Lightly breaded and fried white mushrooms</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Basket of Chicken Fingers with Dipping Sauce-->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/chickenfingers.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Basket of Chicken Fingers with Dipping Sauce</h4>
+                    <span class="dish-price">$7.25</span>
+                  </div>
+                  <p>1 Dipping sauce included</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!--French Fries-->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/frenchfries.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>French Fries</h4>
+                    <span class="dish-price">$4.50</span>
+                  </div>
+                  <p>Hot and fresh french fries</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Breaded Cauliflower-->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/breadedcauliflower.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Breaded Cauliflower</h4>
+                    <span class="dish-price">$5.75</span>
+                  </div>
+                  <p>Crunchy breaded cauliflower florets</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Onion Rings -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/veggiebasket.webp" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Onion Rings</h4>
+                    <span class="dish-price">$6</span>
+                  </div>
+                  <p>Golden brown onion rings</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Loaded Fries -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/loadedfries.PNG" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Loaded Fries</h4>
+                    <span class="dish-price">$7</span>
+                  </div>
+                  <p>Loaded with cheddar cheese sauce and bacon.</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Garlic Bread with Marinara -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/garlicbread.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Garlic Bread with Marinara</h4>
+                    <span class="dish-price">$5.50</span>
+                  </div>
+                  <p>Garlic bread with marinara sauce.</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Garlic Bread with Cheese and Marinara -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/garlicbreadandcheese.jpeg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Garlic Bread with Cheese and Marinara</h4>
+                    <span class="dish-price">$7.50</span>
+                  </div>
+                  <p>Garlic bread with cheese and marinara sauce.</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Garlic Parmesan Bites -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/garlicparmbites.webp" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Garlic Parmesan Bites</h4>
+                    <span class="dish-price">$7.50</span>
+                  </div>
+                  <p>Fried dough tossed in garlic butter and parmesan cheese.</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Pepperoni Nuggets -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/pepperoninuggets.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Pepperoni Nuggets</h4>
+                    <span class="dish-price">$11</span>
+                  </div>
+                  <p>Crispy fried pepperoni bites.</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Spicy Bianco Stix -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/spicybianostix.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Spicy Bianco Stix</h4>
+                    <span class="dish-price">$6.50</span>
+                  </div>
+                  <p>Folded over pizza dough, filled with cheese, garlic powder, red pepper flakes and bacon.</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Shrimp Basket with Fries -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/friedshrimp.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Shrimp Basket with Fries</h4>
+                    <span class="dish-price">$12.50</span>
+                  </div>
+                  <p>Golden fried shrimp served with crispy fries.</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Calzones -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/calzones.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Calzones</h4>
+                    <span class="dish-price">$10.50</span>
+                  </div>
+                  <p>Folded over pizza dough, filled with cheese and 1 topping. Sauce on the side. Additional toppings available.</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Strombolis -->
+            <div class="col-lg-6 isotope-item filter-starters">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/Starters/strombolis.jpg" alt="Starters" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Strombolis</h4>
+                    <span class="dish-price">$10.50</span>
+                  </div>
+                  <p>Folded over pizza dough, filled with cheese, ham, salami, pepperoni and cheese. Sauce on the side. Extra toppings available.</p>
+                  <!-- <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Buffalo Wings -->
+            <div class="col-lg-6 isotope-item filter-wings">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/wings/buffalowings.jpg" alt="Wings" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Buffalo Wings 1lb Pack</h4>
+                    <span class="dish-price">$12.75</span>
+                  </div>
+                  <p>Choices of sauce: Hot, Mild, Extra Hot, BBQ, Honey Mustard, Garlic, Garlic Parmesan, Hot and Spicy BBQ, Cajun Garlic <br>
+                  Cajun Dry Rub, and Teriyaki.</p>
+                  <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+            <!-- Boneless Wings -->
+            <div class="col-lg-6 isotope-item filter-wings">
+              <div class="dish-row">
+                <div class="dish-thumb">
+                  <img src="assets/img/restaurant/wings/bonelesswings.webp" alt="Wings" class="img-fluid">
+                </div>
+                <div class="dish-info">
+                  <div class="dish-header">
+                    <h4>Boneless Wings 10 Pieces</h4>
+                    <span class="dish-price">$12.75</span>
+                  </div>
+                  <p>Choices of sauce: Hot, Mild, Extra Hot, BBQ, Honey Mustard, Garlic, Garlic Parmesan, Hot and Spicy BBQ, Cajun Garlic <br>
+                  Cajun Dry Rub, and Teriyaki</p>
+                  <div class="dish-meta">
+                    <div class="heat-indicator">
+                      <i class="bi bi-fire"></i>
+                      <span class="heat-bar"><span class="heat-fill" style="width: 66%"></span></span>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div><!-- End Dish Item -->
+
+
           </div>
 
         </div>
-         </section><!-- Menu Section -->
 
+        <div class="info-strip" data-aos="fade-up" data-aos-delay="300">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="notice-inline">
+                <i class="bi bi-calendar2-check"></i>
+                <span>Selections rotate with the seasons. Availability may vary depending on fresh ingredients.</span>
+              </div>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#" class="download-link">
+                <i class="bi bi-file-earmark-pdf"></i>
+                <span>Download Full Menu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+ </section><!-- Menu Section -->
 
+<!-- Build Your Own Pizza Section -->
     <section id="build" class="build-section section dark-background">
   <div class="container">
 
@@ -482,7 +993,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Check out our amazing customer reviews!</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -521,10 +1032,10 @@
                       <div class="col-md-4">
                         <div class="reviewer-side">
                           <div class="reviewer-avatar">
-                            <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="" loading="lazy">
+                            <img src="assets/img/person/VicS.png" class="img-fluid" alt="" loading="lazy">
                           </div>
-                          <h4>Andrew Patterson</h4>
-                          <span class="role">Product Lead at Nexova</span>
+                          <h4>Vic S.</h4>
+                          <span class="role">Google Review</span>
                           <div class="rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -537,9 +1048,9 @@
                       <div class="col-md-8">
                         <div class="review-content">
                           <i class="bi bi-quote quote-icon"></i>
-                          <p>Consequat autem dignissimos expedita laudantium perspiciatis nihil. Sed voluptatem facilis aut dolorem doloremque necessitatibus repellendus. Temporibus nostrum amet facere sequi cupiditate provident.</p>
+                          <p>Absolutely hands down the best pizza around</p>
                           <div class="review-meta">
-                            <span class="date"><i class="bi bi-calendar3"></i> 02/18/2026</span>
+                            <span class="date"><i class="bi bi-calendar3"></i> 05/18/2026</span>
                             <span class="badge-verified"><i class="bi bi-patch-check-fill"></i> Verified Review</span>
                           </div>
                         </div>
@@ -551,14 +1062,14 @@
                 <!-- Review Item 2 -->
                 <div class="swiper-slide">
                   <div class="review-card">
-                    <div class="row align-items-center g-0">
+                    <div class="row align-items-stretch g-0">
                       <div class="col-md-4">
                         <div class="reviewer-side">
                           <div class="reviewer-avatar">
-                            <img src="assets/img/person/person-f-3.webp" class="img-fluid" alt="" loading="lazy">
+                            <img src="assets/img/person/ChenjuieQiu.png" class="img-fluid" alt="" loading="lazy">
                           </div>
-                          <h4>Olivia Fernandez</h4>
-                          <span class="role">CTO at BrightLoop</span>
+                          <h4>Chenjuie Qiu</h4>
+                          <span class="role">Google Review</span>
                           <div class="rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -571,9 +1082,9 @@
                       <div class="col-md-8">
                         <div class="review-content">
                           <i class="bi bi-quote quote-icon"></i>
-                          <p>Adipisci veritatis ducimus unde quas accusamus incidunt similique. Voluptate enim blanditiis praesentium iusto recusandae. Excepturi rerum soluta quidem placeat cumque aspernatur itaque.</p>
+                          <p>Pizza is sooo good, just ordered and tried, absolutely good. We live like 5 mins away and saw this pizza store on Google map, thought why not give a try, and it's amazing. I really love their chicken wing, slight crispy outside, very tender inside! I guess my cat also loves the chicken lolol</p>
                           <div class="review-meta">
-                            <span class="date"><i class="bi bi-calendar3"></i> 11/05/2025</span>
+                            <span class="date"><i class="bi bi-calendar3"></i> 02/14/2026</span>
                             <span class="badge-verified"><i class="bi bi-patch-check-fill"></i> Verified Review</span>
                           </div>
                         </div>
@@ -585,29 +1096,29 @@
                 <!-- Review Item 3 -->
                 <div class="swiper-slide">
                   <div class="review-card">
-                    <div class="row align-items-center g-0">
+                    <div class="row align-items-stretch g-0">
                       <div class="col-md-4">
                         <div class="reviewer-side">
                           <div class="reviewer-avatar">
-                            <img src="assets/img/person/person-m-14.webp" class="img-fluid" alt="" loading="lazy">
+                            <img src="assets/img/person/KirkKervin.png" class="img-fluid" alt="" loading="lazy">
                           </div>
-                          <h4>Nathan Brooks</h4>
-                          <span class="role">Engineering Manager at Vortiq</span>
+                          <h4>Kirk Kervin</h4>
+                          <span class="role">Google Review</span>
                           <div class="rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star-fill"></i>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-8">
                         <div class="review-content">
                           <i class="bi bi-quote quote-icon"></i>
-                          <p>Quisquam dolorum pariatur nemo iure architecto sapiente debitis. Mollitia totam reprehenderit accusantium suscipit dignissimos. Velit numquam eaque voluptas ullam quasi distinctio eligendi.</p>
+                          <p>Well the prices are very reasonable. Their signature dish I think is the deluxe medium Pizza. And you cannot go wrong with the salad. Those are phenomenal and the subs. It is a tie between the Philly cheesesteak and Italian sub. Those are the best hands down. With all the other pizza places around here they are my overall to go to place.</p>
                           <div class="review-meta">
-                            <span class="date"><i class="bi bi-calendar3"></i> 08/22/2025</span>
+                            <span class="date"><i class="bi bi-calendar3"></i> 01/22/2026</span>
                             <span class="badge-verified"><i class="bi bi-patch-check-fill"></i> Verified Review</span>
                           </div>
                         </div>
@@ -623,10 +1134,10 @@
                       <div class="col-md-4">
                         <div class="reviewer-side">
                           <div class="reviewer-avatar">
-                            <img src="assets/img/person/person-f-10.webp" class="img-fluid" alt="" loading="lazy">
+                            <img src="assets/img/person/Nosh.png" class="img-fluid" alt="" loading="lazy">
                           </div>
-                          <h4>Rachel Nguyen</h4>
-                          <span class="role">VP of Operations at Helixo</span>
+                          <h4>Nosh</h4>
+                          <span class="role">Google Review</span>
                           <div class="rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -639,9 +1150,9 @@
                       <div class="col-md-8">
                         <div class="review-content">
                           <i class="bi bi-quote quote-icon"></i>
-                          <p>Laborum nesciunt inventore delectus minima optio harum repudiandae. Fugiat tempore modi quibusdam aliquam assumenda corporis. Quod perspiciatis vitae dolores sint officia tempora.</p>
+                          <p>Been going here a few years with my family to get pizza and it's honestly one of the best small pizzas places around if your looking for a great place to get pizza this is the place without question give them the love they deserve it</p>
                           <div class="review-meta">
-                            <span class="date"><i class="bi bi-calendar3"></i> 06/10/2025</span>
+                            <span class="date"><i class="bi bi-calendar3"></i> 07/01/2026</span>
                             <span class="badge-verified"><i class="bi bi-patch-check-fill"></i> Verified Review</span>
                           </div>
                         </div>
@@ -653,14 +1164,14 @@
                 <!-- Review Item 5 -->
                 <div class="swiper-slide">
                   <div class="review-card">
-                    <div class="row align-items-center g-0">
+                    <div class="row align-items-stretch g-0">
                       <div class="col-md-4">
                         <div class="reviewer-side">
                           <div class="reviewer-avatar">
-                            <img src="assets/img/person/person-m-4.webp" class="img-fluid" alt="" loading="lazy">
+                            <img src="assets/img/person/JodiEsposito.png" class="img-fluid" alt="" loading="lazy">
                           </div>
-                          <h4>Derek Sullivan</h4>
-                          <span class="role">Founder at Streambase</span>
+                          <h4>Jodi Esposito</h4>
+                          <span class="role">Google Review</span>
                           <div class="rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -673,7 +1184,9 @@
                       <div class="col-md-8">
                         <div class="review-content">
                           <i class="bi bi-quote quote-icon"></i>
-                          <p>Reiciendis consequuntur deleniti nostrum recusandae possimus beatae explicabo. Earum doloribus aperiam tenetur illum maxime saepe. Placeat culpa quaerat reprehenderit hic ipsa facilis.</p>
+                          <p>Consistently excellent pizza. So far, pizza is the only thing we've had. We look forward to trying some other menu items. It's great to have an authentic, delicious pizza every time we're in the area. Thanks, Tonios! <br>
+                            <br>
+                            I've been back several times since my review, and I wouldn't change a word. The sausage is outstanding. The crust is outta this world. And the sauce IS perfection. I continue to be impressed. ( the pepperoni nuggets fell from heaven ).</p>
                           <div class="review-meta">
                             <span class="date"><i class="bi bi-calendar3"></i> 01/30/2026</span>
                             <span class="badge-verified"><i class="bi bi-patch-check-fill"></i> Verified Review</span>
@@ -687,14 +1200,14 @@
                 <!-- Review Item 6 -->
                 <div class="swiper-slide">
                   <div class="review-card">
-                    <div class="row align-items-center g-0">
+                    <div class="row align-items-stretch g-0">
                       <div class="col-md-4">
                         <div class="reviewer-side">
                           <div class="reviewer-avatar">
-                            <img src="assets/img/person/person-f-8.webp" class="img-fluid" alt="" loading="lazy">
+                            <img src="assets/img/person/DougMiller.png" class="img-fluid" alt="" loading="lazy">
                           </div>
-                          <h4>Megan Hartley</h4>
-                          <span class="role">Design Director at Pixelwing</span>
+                          <h4>Doug Miller</h4>
+                          <span class="role">Google Review</span>
                           <div class="rating">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -707,9 +1220,10 @@
                       <div class="col-md-8">
                         <div class="review-content">
                           <i class="bi bi-quote quote-icon"></i>
-                          <p>Dignissimos aperiam voluptatum molestiae repudiandae dolor temporibus. Suscipit omnis eligendi porro corrupti eveniet laboriosam. Natus illo voluptates quos cumque odit aspernatur.</p>
+                          <p>They do curbside and run the pizzas down to you. You pay the curbside person either cash or charge, but if you wanna tip bring a few bucks with you.
+The pizza was phenomenal. I ordered the basic large cheese and large pepperoni. You cant go wrong with the place.</p>
                           <div class="review-meta">
-                            <span class="date"><i class="bi bi-calendar3"></i> 04/12/2025</span>
+                            <span class="date"><i class="bi bi-calendar3"></i> 06/22/2025</span>
                             <span class="badge-verified"><i class="bi bi-patch-check-fill"></i> Verified Review</span>
                           </div>
                         </div>
@@ -742,7 +1256,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Location</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Local Neighborhood Pizza</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -754,8 +1268,9 @@
                 <i class="bi bi-pin-map"></i>
               </div>
               <h3>Our Address</h3>
-              <p>742 Riverside Boulevard, Austin, TX 73301</p>
-              <a href="#" class="tile-link">Get Directions <i class="bi bi-arrow-right"></i></a>
+              <p>3940 Avon Lake Rd. Litchfield, OH 44253</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Tonios+Pizza+Litchfield+Ohio" target="_blank" rel="noopener noreferrer">
+Get Directions <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Contact Tile -->
 
@@ -764,10 +1279,8 @@
               <div class="tile-icon">
                 <i class="bi bi-telephone-outbound"></i>
               </div>
-              <h3>Book a Table</h3>
-              <p>+1 (555) 482-3190</p>
-              <p class="hint">Advance booking of 24 hours is suggested for weekends</p>
-              <a href="#" class="tile-link">Reserve Now <i class="bi bi-arrow-right"></i></a>
+              <h3>Call Us</h3>
+              <p>+1 (330) 725-7666</p>
             </div>
           </div><!-- End Contact Tile -->
 
@@ -778,10 +1291,10 @@
               </div>
               <h3>Opening Schedule</h3>
               <ul class="schedule-list">
-                <li><span>Mon – Thu</span><span>11:30 AM – 9:30 PM</span></li>
-                <li><span>Fri – Sat</span><span>11:00 AM – 11:00 PM</span></li>
-                <li><span>Sunday</span><span>10:30 AM – 8:30 PM</span></li>
-                <li><span>Weekend Brunch</span><span>Sat &amp; Sun, 10:00 AM – 1:30 PM</span></li>
+                <li><span>Monday</span><span>4:00 PM – 8:00 PM</span></li>
+                <li><span>Tuesday – Thursday</span><span>4:00 PM – 9:00 PM</span></li>
+                <li><span>Friday – Saturday</span><span>11:00 AM – 10:00 PM</span></li>
+                <li><span>Sunday</span><span>12:00 PM – 8:00 PM</span></li>
               </ul>
             </div>
           </div><!-- End Contact Tile -->
@@ -790,16 +1303,7 @@
         <div class="row mt-5">
           <div class="col-12" data-aos="zoom-in" data-aos-delay="200">
             <div class="map-wrapper">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.684949335945!2d-73.98658242357565!3d40.75853057126168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzMwLjciTiA3M8KwNTknMDcuNyJX!5e0!3m2!1sen!2sus!4v1654321234567!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-4">
-          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="300">
-            <div class="action-bar">
-              <a href="#" class="btn-primary-action">Schedule a Visit</a>
-              <a href="#" class="btn-secondary-action">Send a Message</a>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.5190771506886!2d-82.02602332315985!3d41.16684427132874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830baa0cd38bc13%3A0xf3a41d832579fa81!2sTonio&#39;s%20Pizza!5e0!3m2!1sen!2sus!4v1784040229243!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -818,8 +1322,7 @@
           <i class="bi bi-geo-alt icon"></i>
           <div class="address">
             <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>3940 Avon Lake Rd. Litchfield, OH 44253</p>
             <p></p>
           </div>
 
@@ -830,8 +1333,8 @@
           <div>
             <h4>Contact</h4>
             <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
+              <strong>Phone:</strong> <span>+1 (330) 725-7666</span><br>
+              <strong>Email:</strong> <span>toniospizza@hotmail.com</span><br>
             </p>
           </div>
         </div>
@@ -850,10 +1353,7 @@
         <div class="col-lg-3 col-md-6">
           <h4>Follow Us</h4>
           <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/p/Tonios-Pizza-100057297954730/" class="facebook"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
 

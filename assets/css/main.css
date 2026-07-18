@@ -1227,11 +1227,11 @@ section,
 .menu .dish-row .dish-price {
   flex-shrink: 0;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--accent-color);
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  padding: 5px 14px;
+  padding: 9px 20px;
   border-radius: 20px;
 }
 
@@ -1652,11 +1652,12 @@ section,
 .menu .dish-row .dish-info .dish-header .dish-price {
   display: inline-block;
   max-width: 100%;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  font-size: 11px;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  font-size: 14px;
   line-height: 1.3;
-  padding: 4px 9px;
+  font-weight: 700;
+  padding: 5px 12px;
   border-radius: 16px;
 }
 
@@ -1830,29 +1831,6 @@ section,
 }
 
 
-/*--------------------------------------------------------------
-# Pizza Row Hover Effect
---------------------------------------------------------------*/
-
-.pizza-row:not(.pizza-head) {
-  cursor: pointer;
-}
-
-.pizza-row:not(.pizza-head):hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 88%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
-  transform: translateY(-4px);
-  box-shadow: 0 14px 35px color-mix(in srgb, #000, transparent 78%);
-}
-
-.pizza-row:not(.pizza-head):hover span:first-child {
-  color: var(--accent-color);
-}
-
-.pizza-row:not(.pizza-head):hover span:not(:first-child) {
-  color: var(--contrast-color);
-}
-
 
 /*--------------------------------------------------------------
 # Pizza Note
@@ -1961,10 +1939,6 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials {
-  background: radial-gradient(circle at 10% 30%, color-mix(in srgb, var(--accent-color) 6%, transparent), transparent 50%), radial-gradient(circle at 90% 70%, color-mix(in srgb, var(--accent-color) 4%, transparent), transparent 50%);
-}
-
 .testimonials .review-card {
   background: var(--surface-color);
   border-radius: 16px;
@@ -1972,6 +1946,7 @@ section,
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: auto;
 }
 
 .testimonials .review-card:hover {
